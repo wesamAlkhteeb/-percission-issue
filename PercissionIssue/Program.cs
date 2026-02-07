@@ -22,17 +22,6 @@ app.MapGet("/", () => "Welcome to Wallet Tracker. GET /run-scenario to execute t
 
 app.MapGet("/sum", () =>
 {
-    // 198.302918391028301283012830129830128302138
-
-    // num    : 198302918391028301283012830129830128302138
-    // scale  : 25
-
-    // ******
-    // 777.00001
-    // num    : 77700001
-    // scale  : 5
-
-
     BigInteger a = BigInteger.Parse("198302918391028301283012830129830128302138");
     BigInteger b = BigInteger.Parse("198302918391028301283012830129830128302138");
     return (a + b).ToString();
